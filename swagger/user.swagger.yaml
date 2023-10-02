@@ -1,0 +1,23 @@
+paths:
+  /user/login:
+    post:
+      tags:
+        - User
+      summary: 로그인 로직 처리
+      parameters:
+        - name: userIDPW
+          in: body
+          required: true
+          schema:
+            properties:
+              id:
+                type: string
+              pw:
+                type: string
+      responses:
+        '200':
+          description: 로그인 성공
+        '400':
+          description: 입력 값 없음
+        '404':
+          description: 로그인 실패 (아이디, 비밀번호 불일치)
