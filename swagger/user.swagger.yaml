@@ -3,7 +3,7 @@ paths:
     post:
       tags:
         - User
-      summary: 로그인 로직 처리
+      summary: 로그인 로직 처리 및 토큰 발급 (JWT Token)
       parameters:
         - name: userIDPW
           in: body
