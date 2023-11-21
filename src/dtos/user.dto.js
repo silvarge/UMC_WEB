@@ -1,5 +1,5 @@
 export const loginResponseDTO = (data, accessToken, refreshToken) => {
-    return {"userId": data.userid, "AccessToken": accessToken};
+    return {"userId": data.userid, "username": data.username, "password": data.password, "AccessToken": accessToken};
     // return {"token": data.userid, "name": data.username};
 }
 
