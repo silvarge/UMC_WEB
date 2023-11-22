@@ -4,6 +4,6 @@ export const loginResponseDTO = (data, accessToken, refreshToken) => {
 }
 
 export const payloadResponseDTO = (data) => {
-    // console.log("DTO", data);
+    console.log("DTO", data);
     return {"id": data.id, "name": data.username};
 }
